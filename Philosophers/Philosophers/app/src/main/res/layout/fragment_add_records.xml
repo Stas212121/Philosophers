@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical"
+
+    >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutADDcitat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+
+            >
+
+            <TextView
+                android:id="@+id/textshowRecords"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="33dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="33dp"
+                android:text="Добавить цитату в Избранное"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/linex"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="11dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/toolbar_white"
+                android:textColor="@color/title"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/imageButtonHigh"
+                    android:layout_width="53dp"
+                    android:layout_height="33dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/bg_round_botton_more_info"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:src="@drawable/ic_playlist_add_check_black_24dp"
+                    android:textColor="@color/white" />
+
+                <LinearLayout
+
+                    android:id="@+id/vieww"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="111dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/textarray"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginLeft="@dimen/layout_marginLeftTwo"
+                        android:layout_marginTop="22dp"
+
+                        android:layout_marginRight="@dimen/layout_marginRightTwo"
+                        android:background="@drawable/bg_round_top_sector"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/onetext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/layout_marginLeftTwo"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="@dimen/layout_marginRightTwo"
+                            android:text="Вы можете"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                            android:textColor="@color/white"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/twotext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/layout_marginLeftTwo"
+                            android:layout_marginRight="@dimen/layout_marginRightTwo"
+                            android:text="добавлять цитаты в поле."
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                            android:textColor="@color/white"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/line"
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:layout_marginLeft="11dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="11dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/toolbar_white"
+                            android:textColor="@color/white"
+
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/threetext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/layout_marginLeftTwo"
+                            android:layout_marginRight="@dimen/layout_marginRightTwo"
+                            android:text="Это могут быть ваши "
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                            android:textColor="@color/white"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/fourtext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/layout_marginLeftTwo"
+                            android:layout_marginRight="@dimen/layout_marginRightTwo"
+                            android:layout_marginBottom="5dp"
+                            android:text="собственные наблюдения( изречения )"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                            android:textColor="@color/white"
+                            android:textSize="15dp" />
+
+                    </LinearLayout>
+                    <!--            &lt;!&ndash;    <TextView&ndash;&gt;-->
+                    <!--            &lt;!&ndash;        android:layout_width="match_parent"&ndash;&gt;-->
+                    <!--            &lt;!&ndash;        android:layout_height="wrap_content"&ndash;&gt;-->
+                    <!--            &lt;!&ndash;        android:text="To:"&ndash;&gt;-->
+                    <!--            &lt;!&ndash;        android:textAppearance="@style/TextAppearance.AppCompat.Large" />&ndash;&gt;-->
+
+                    <!--            &lt;!&ndash;    <EditText&ndash;&gt;-->
+                    <!--            &lt;!&ndash;        android:id="@+id/edit_text_to"&ndash;&gt;-->
+                    <!--            &lt;!&ndash;        android:layout_width="match_parent"&ndash;&gt;-->
+                    <!--            &lt;!&ndash;        android:layout_height="32dp"&ndash;&gt;-->
+                    <!--            &lt;!&ndash;        android:text="developer.stanislavkononenko@gmail.com"&ndash;&gt;-->
+                    <!--            &lt;!&ndash;        android:background="@drawable/bg_round"&ndash;&gt;-->
+                    <!--            &lt;!&ndash;        android:inputType="textEmailAddress" />&ndash;&gt;-->
+
+                    <TextView
+                        android:id="@+id/textqq"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="22dp"
+
+                        android:layout_marginTop="11dp"
+                        android:layout_marginRight="22dp"
+                        android:text="Введите цитату:"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/white"
+                        tools:ignore="InvalidId" />
+
+
+                    <EditText
+                        android:id="@+id/editTextNewCitata"
+                        android:layout_width="match_parent"
+                        android:layout_height="95dp"
+                        android:layout_marginLeft="@dimen/layout_marginLeftTwo"
+                        android:layout_marginTop="11dp"
+                        android:layout_marginRight="@dimen/layout_marginRightTwo"
+                        android:background="@drawable/bg_round_app_info"
+                        android:gravity="start|top"
+                        android:lines="10"
+                        android:text="Вы можете вводить до 1000 символов"
+
+                        android:textColor="@color/colornew1" />
+
+                    <TextView
+                        android:id="@+id/countletters"
+                        android:layout_width="match_parent"
+                        android:layout_height="33dp"
+                        android:layout_marginLeft="@dimen/layout_marginLeftTwo"
+
+                        android:layout_marginTop="11dp"
+                        android:layout_marginRight="@dimen/layout_marginRightTwo"
+                        android:background="@color/colorPrimaryone"
+
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/white"
+                        android:textSize="14dp"
+                        android:textStyle="bold"
+                        tools:ignore="InvalidId" />
+
+                    <ImageButton
+                        android:id="@+id/btnSave"
+                        android:layout_width="53dp"
+                        android:layout_height="33dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="21dp"
+                        android:background="@drawable/bg_round_botton_more_info"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:src="@drawable/ic_playlist_add_check_black_24dp" />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

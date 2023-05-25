@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6D8FF0</color>
+
+    <color name="colorPrimaryvvv">#0032b9</color>
+
+    <color name="buttonLabel">#FFFFFF</color>
+    <color name="colorPrimaryx">#153C52</color>
+    <color name="colorPrimaryone">#2E2EE2</color>
+    <color name="colornew1">#B97F8585</color>
+    <color name="colorPrimarytwo">#00FCFAFA</color>
+    <color name="colorPrimaryxxx">#0A50E4</color>
+    <color name="colorPrimaryfour">#202020</color>
+    <color name="colorPrimarysix">#B6B3B3</color>
+    <color name="colorPrimarythree">#D0726363</color>
+    <color name="colorPrimaryDark">#3D6CEB</color>
+    <color name="colorAccent">#DFE75454</color>
+    <color name="colorAccentnew">#75B3EB</color>
+    <color name="begin_title">#185216</color>
+    <color name="year">#ffffff</color>
+    <color name="title">#060606</color>
+    <color name="genre">#635B5B</color>
+    <color name="bazic">#EDE9FA</color>
+    <color name="white">#FFFFFF</color>
+    <color name="newx">#FBFBFB</color>
+    <color name="colorNavIcon">#635B5B</color>
+    <color name="colorNavText">#2B068D</color>
+    <color name="tab_background_selected">#C7ECC4</color>
+    <color name="tab_background_unselected">#FFFDFD</color>
+    <color name="coloratention">#E74848</color>
+    <color name="menu_normal">#ff000000</color>
+    <color name="menu_focused">#ff097400</color>
+    <color name="menu_pressed">#ff005E24</color>
+    <color name="test">#E60404DF</color>
+    <color name="testtwo">#5B1548D8</color>
+
+    <color name="color1">#227CC3</color>
+    <color name="color2">#2EB834</color>
+    <color name="color3">#ED1BOB</color>
+    <color name="color4">#F1DA12</color>
+    <color name="color5">#9617AC</color>
+
+
+
+
+
+
+</resources>

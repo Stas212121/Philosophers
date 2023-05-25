@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llllll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/row_padding_vertical"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/row_padding_vertical"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="12dp" />
+
+                <ImageButton
+                    android:id="@+id/newButtonZoom"
+                    android:layout_width="42dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_round_small"
+                    android:src="@drawable/ic_zoom_in_black_24dp" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonMap"
+                    android:layout_width="42dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="12dp"
+                    android:background="@drawable/bg_round_small"
+                    android:src="@drawable/bornplace" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/white"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_round_app_info"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/descriptionView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="15dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="@color/title"
+                    android:textSize="@dimen/text_size_all" />
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayoutLineWithButtons"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="@dimen/layout_marginLeftTwo"
+
+                    android:layout_marginTop="21dp"
+                    android:layout_marginRight="@dimen/layout_marginRightTwo"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageButton
+                        android:id="@+id/buttonZoomOneMainActivity"
+                        android:layout_width="@dimen/zoom_in_width"
+                        android:layout_height="@dimen/zoom_out_height"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="11dp"
+                        android:background="@drawable/bg_round_small"
+                        android:src="@drawable/ic_zoom_in_black_24dp" />
+
+                    <ImageButton
+                        android:id="@+id/buttonRightThreeMainActivity"
+                        android:layout_width="27dp"
+                        android:layout_height="27dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="185dp"
+                        android:background="@drawable/bg_round_small"
+                        android:src="@drawable/ic_format_list_bulleted_black_24dp" />
+
+                    <ImageButton
+                        android:id="@+id/buttonRightFourMainActivity"
+                        android:layout_width="27dp"
+                        android:layout_height="27dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="227dp"
+                        android:src="@drawable/ic_insert_comment_black_24dp" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_round_small"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/yearView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/toolbar_year_line"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/linesred"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+
+                android:background="@drawable/toolbar_white"
+                android:textColor="@color/title"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradient"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/newButtonCitaty"
+                    android:layout_width="match_parent"
+                    android:layout_height="27dp"
+                    android:layout_marginLeft="112dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="112dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/bg_round_botton_more_info"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:text="Цитаты"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/toolbar_white"
+                android:textColor="@color/title"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradient"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/newButtonPodrobnosti"
+                    android:layout_width="180dp"
+                    android:layout_height="27dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/bg_round_botton_more_info"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:text="Подробности жизни"
+                    android:textColor="@color/white" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/linebottom"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+
+                android:background="@drawable/toolbar_white"
+                android:textColor="@color/title"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

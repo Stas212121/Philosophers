@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Philosophers.SearchActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutSEARCHcitat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+
+            >
+            <!--    <RelativeLayout-->
+            <!--        android:layout_width = "match_parent"-->
+            <!--        android:layout_height = "match_parent">-->
+
+            <!--        <Button-->
+            <!--            android:id="@+id/button"-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="wrap_content"-->
+
+            <!--            android:background="@drawable/bg_round_app_info"-->
+            <!--            android:layout_centerHorizontal="true"-->
+            <!--            android:layout_marginTop="10dp"-->
+
+            <!--            android:layout_marginBottom="10dp"-->
+            <!--            android:text="Добавить цитату в  свой архив"  />-->
+
+            <!--        <LinearLayout-->
+
+            <!--            android:id = "@+id/vieww"-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:layout_marginTop="45dp"-->
+            <!--            android:layout_marginBottom="50dp"-->
+            <!--            android:orientation="vertical">-->
+            <!--            <LinearLayout-->
+
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="25dp"-->
+            <!--                android:background="@drawable/bg_round_hige"-->
+            <!--                android:orientation="vertical">-->
+
+            <!--                <TextView-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_marginLeft="11dp"-->
+            <!--                    android:layout_marginTop="15dp"-->
+            <!--                    android:text="Вы можете"-->
+            <!--                    android:textAppearance="@style/TextAppearance.AppCompat.Large"-->
+            <!--                    android:textSize="15dp" />-->
+
+            <!--                <TextView-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_marginLeft="11dp"-->
+            <!--                    android:text="добавлять цитаты в поле."-->
+            <!--                    android:textAppearance="@style/TextAppearance.AppCompat.Large"-->
+            <!--                    android:textSize="15dp" />-->
+            <!--                <TextView-->
+            <!--                    android:id="@+id/line"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="3dp"-->
+            <!--                    android:layout_marginLeft="11dp"-->
+            <!--                    android:layout_marginTop="5dp"-->
+            <!--                    android:layout_marginRight="11dp"-->
+            <!--                    android:layout_marginBottom="5dp"-->
+            <!--                    android:background="@drawable/toolbar2_background"-->
+            <!--                    android:textColor="@color/title"-->
+            <!--                    android:textStyle="bold" />-->
+            <!--                <TextView-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_marginLeft="11dp"-->
+            <!--                    android:text="Это могут быть ваши "-->
+            <!--                    android:textAppearance="@style/TextAppearance.AppCompat.Large"-->
+            <!--                    android:textSize="15dp"-->
+            <!--                    />-->
+            <!--                <TextView-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_marginLeft="11dp"-->
+            <!--                    android:text="собственные наблюдения"-->
+            <!--                    android:textAppearance="@style/TextAppearance.AppCompat.Large"-->
+            <!--                    android:textSize="15dp"-->
+            <!--                    android:layout_marginBottom="5dp"/>-->
+
+            <!--            </LinearLayout>-->
+            <!--            &lt;!&ndash;    <TextView&ndash;&gt;-->
+            <!--            &lt;!&ndash;        android:layout_width="match_parent"&ndash;&gt;-->
+            <!--            &lt;!&ndash;        android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--            &lt;!&ndash;        android:text="To:"&ndash;&gt;-->
+            <!--            &lt;!&ndash;        android:textAppearance="@style/TextAppearance.AppCompat.Large" />&ndash;&gt;-->
+
+            <!--            &lt;!&ndash;    <EditText&ndash;&gt;-->
+            <!--            &lt;!&ndash;        android:id="@+id/edit_text_to"&ndash;&gt;-->
+            <!--            &lt;!&ndash;        android:layout_width="match_parent"&ndash;&gt;-->
+            <!--            &lt;!&ndash;        android:layout_height="32dp"&ndash;&gt;-->
+            <!--            &lt;!&ndash;        android:text="developer.stanislavkononenko@gmail.com"&ndash;&gt;-->
+            <!--            &lt;!&ndash;        android:background="@drawable/bg_round"&ndash;&gt;-->
+            <!--            &lt;!&ndash;        android:inputType="textEmailAddress" />&ndash;&gt;-->
+
+            <!--            <TextView-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:text="Введите цитату:"-->
+            <!--                android:textAppearance="@style/TextAppearance.AppCompat.Large" />-->
+
+            <!--            <EditText-->
+            <!--                android:id="@+id/etCitaty"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="77dp"-->
+            <!--                android:background="@drawable/bg_round"-->
+            <!--                android:gravity="start|top"-->
+            <!--                android:lines="10" />-->
+
+            <!--            <Button-->
+            <!--                android:id="@+id/btnAddt"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="21dp"-->
+            <!--                android:background="@drawable/bg_round"-->
+            <!--                android:backgroundTint="@color/colorPrimary"-->
+            <!--                android:text="Добавить в  свой архив" />-->
+
+            <!--            <Button-->
+            <!--                android:id="@+id/btnRead"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:text="btnRead" />-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/textViewt"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="84dp"-->
+            <!--                android:text="TextView" />-->
+            <!--        </LinearLayout>-->
+            <!--    </RelativeLayout>-->
+
+            <TextView
+                android:id="@+id/textSearchRecords"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="33dp"
+
+                android:layout_marginTop="11dp"
+                android:layout_marginRight="33dp"
+                android:text="Поиск избранных цитат"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/white"
+                android:textSize="22dp"
+                android:textStyle="bold"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeftTwo"
+
+                android:layout_marginRight="@dimen/layout_marginRightTwo"
+                android:background="@drawable/bg_round_top_sector"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/onetext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="@dimen/layout_marginLeftTwo"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="@dimen/layout_marginRightTwo"
+                    android:text="Поиск по ключевым словам "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="@color/white"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/twotext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_marginLeftTwo"
+
+                    android:layout_marginRight="@dimen/layout_marginRightTwo"
+                    android:layout_marginBottom="5dp"
+                    android:text="Введите слово встречающееся в цитате:"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="@color/white"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/linee"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="11dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/toolbar_white"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeftTwo"
+                android:layout_marginRight="@dimen/layout_marginRightTwo"
+                android:background="@drawable/bg_round_top_sector"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/inputSearch"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Поиск..."
+                    android:inputType="textVisiblePassword"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_all" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/linetwo"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="11dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/toolbar_white"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <ListView
+                android:id="@+id/list_view_search"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:dividerHeight="1dp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

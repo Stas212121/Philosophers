@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bazic"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ic_back"
+    tools:context="com.example.Philosophers.Begin.MainActivity"
+    tools:ignore="InvalidId">
+
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="28dp">
+
+    </FrameLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradientone"
+        app:itemIconTint="@drawable/tab_color_selector"
+        app:itemTextColor="@color/colorNavText"
+        app:layout_constraintBottom_toBottomOf="@+id/fragment_container"
+        app:menu="@menu/navigation_bottom"
+        tools:ignore="MissingConstraints"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

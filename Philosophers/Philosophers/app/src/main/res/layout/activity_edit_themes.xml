@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Philosophers.EditThemesActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:id="@+id/layout_themes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/themetitle"
+                android:layout_width="674dp"
+
+
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeftOne"
+                android:layout_marginTop="21dp"
+                android:layout_marginRight="@dimen/layout_marginRightOne"
+                android:text="Изменить тему приложения."
+
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+
+            <LinearLayout
+                android:id="@+id/layout_infoxx"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/layout_marginLeftTwo"
+                android:layout_marginRight="@dimen/layout_marginRightTwo"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/textarray"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp"
+                    android:background="@drawable/bg_round_top_sector"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/onetext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layout_marginLeftTwo"
+                        android:layout_marginTop="11dp"
+                        android:layout_marginRight="@dimen/layout_marginRightTwo"
+                        android:text="Выберите тему"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/white"
+                        android:textSize="17dp" />
+
+
+                    <TextView
+
+
+                        android:id="@+id/line"
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+
+
+                        android:layout_marginLeft="@dimen/layout_marginLeftTwo"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="@dimen/layout_marginRightTwo"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/toolbar_white"
+                        android:textColor="@color/title"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/twotext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layout_marginLeftTwo"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="@dimen/layout_marginRightTwo"
+                        android:text="После закрытия приложения  "
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/threetext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layout_marginLeftTwo"
+                        android:layout_marginRight="@dimen/layout_marginRightTwo"
+                        android:layout_marginBottom="11dp"
+                        android:text="тема созраняется в настройках:"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+
+
+                </LinearLayout>
+
+                <!--    <TextView-->
+                <!--        android:layout_width="match_parent"-->
+                <!--        android:layout_height="wrap_content"-->
+                <!--        android:text="To:"-->
+                <!--        android:textAppearance="@style/TextAppearance.AppCompat.Large" />-->
+
+                <!--    <EditText-->
+                <!--        android:id="@+id/edit_text_to"-->
+                <!--        android:layout_width="match_parent"-->
+                <!--        android:layout_height="32dp"-->
+                <!--        android:text="developer.stanislavkononenko@gmail.com"-->
+                <!--        android:background="@drawable/bg_round"-->
+                <!--        android:inputType="textEmailAddress" />-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp"
+                    android:orientation="vertical">
+
+                    <ScrollView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="11dp">
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/bg_round_app_info"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:id="@+id/relativeLayoutLineWithButtons"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:layout_marginLeft="11dp"
+                                android:layout_marginTop="11dp"
+                                android:layout_marginRight="11dp"
+                                android:background="@drawable/toolbar_white">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TableLayout
+                                        android:id="@+id/tableLayout1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <TableRow
+                                            android:id="@+id/tableRow1"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+
+                                            <ImageButton
+                                                android:id="@+id/button_one"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:src="@drawable/minione"
+                                                android:text="Button" />
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="11dp"
+                                                android:layout_marginTop="5dp"
+                                                android:text="Blue "
+                                                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                                android:textColor="@color/white"
+                                                android:textSize="12dp" />
+
+
+                                        </TableRow>
+
+                                        <TableRow
+                                            android:id="@+id/tableRow2"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+
+                                            <ImageButton
+                                                android:id="@+id/button_two"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:src="@drawable/minitwo"
+                                                android:text="Button"></ImageButton>
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="11dp"
+                                                android:layout_marginTop="5dp"
+                                                android:text="Gray  "
+                                                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                                android:textColor="@color/white"
+                                                android:textSize="12dp" />
+
+                                        </TableRow>
+
+                                        <TableRow
+                                            android:id="@+id/tableRow3"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+
+                                            <ImageButton
+                                                android:id="@+id/button_three"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:src="@drawable/minithree"
+                                                android:text="Button"></ImageButton>
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="11dp"
+                                                android:layout_marginTop="5dp"
+                                                android:text="Abstract  "
+                                                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                                android:textColor="@color/white"
+                                                android:textSize="12dp" />
+
+                                        </TableRow>
+
+                                        <TableRow
+                                            android:id="@+id/tableRow4"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+
+                                            <ImageButton
+                                                android:id="@+id/button_four"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:src="@drawable/minifour"
+                                                android:text="Button"></ImageButton>
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="11dp"
+                                                android:layout_marginTop="5dp"
+                                                android:text="Yelloy  "
+                                                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                                android:textColor="@color/white"
+                                                android:textSize="12dp" />
+
+                                        </TableRow>
+
+                                        <TableRow
+                                            android:id="@+id/tableRow5"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+
+                                            <ImageButton
+                                                android:id="@+id/button_five"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:src="@drawable/minifive"
+                                                android:text="Button"></ImageButton>
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="11dp"
+                                                android:layout_marginTop="5dp"
+                                                android:text="Purple  "
+                                                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                                android:textColor="@color/white"
+                                                android:textSize="12dp" />
+
+                                        </TableRow>
+                                    </TableLayout>
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+                    </ScrollView>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

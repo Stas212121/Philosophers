@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+
+        android:id="@+id/navigation_bottom_item_one"
+        android:icon="@drawable/ic_home_black_24dp"
+
+        android:title="@string/home" />
+    <item
+
+        android:id="@+id/navigation_bottom_item_two"
+        android:icon="@drawable/ic_playlist_add_check_black_24dp"
+        android:title="@string/add_records" />
+    <item
+
+        android:id="@+id/navigation_bottom_item_show_records"
+        android:icon="@drawable/ic_favorite_black_24dp"
+        android:title="@string/show_records" />
+    <item
+
+        android:id="@+id/navigation_bottom_item_mail"
+        android:icon="@drawable/ic_contact_mail_black_24dp"
+        android:title="@string/contact" />
+
+    <item
+
+        android:id="@+id/navigation_bottom_item_exit"
+        android:icon="@drawable/ic_exit_to_app_black_24dp"
+        android:title="@string/exit" />
+
+</menu>

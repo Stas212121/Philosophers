@@ -1,0 +1,1216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Philosophers.ImageHorizontalScrollActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/relativeLayout_height"
+        android:background="@drawable/gradient_image_high_line"
+        tools:context=".Begin.MainActivity"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/white" />
+
+        <HorizontalScrollView
+            android:id="@+id/hsv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:fillViewport="true"
+            android:measureAllChildren="false"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/innerLay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="11dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true" />
+
+                <LinearLayout
+                    android:id="@+id/layout_parmenid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/image_parmenid"
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="@dimen/size_image_line"
+                            android:src="@mipmap/parmenid" />
+
+                        <TextView
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="44dp"
+                            android:layout_below="@+id/image_parmenid"
+                            android:layout_alignParentLeft="true"
+                            android:gravity="center"
+                            android:text="Парменид"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_size_image_line" />
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="@dimen/width_line_image"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true" />
+
+                <LinearLayout
+                    android:id="@+id/layout_aristotel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/image_aristotelone"
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="@dimen/size_image_line"
+                            android:src="@mipmap/aristotel" />
+
+
+                        <TextView
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="44dp"
+                            android:layout_below="@+id/image_aristotelone"
+                            android:layout_alignParentLeft="true"
+                            android:gravity="center"
+                            android:text="Аристотель"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_size_image_line" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="@dimen/width_line_image"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true" />
+
+                <LinearLayout
+                    android:id="@+id/layout_mark_avreliy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/image_avreliy"
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="@dimen/size_image_line"
+                            android:src="@mipmap/mark_avreliy" />
+
+                        <TextView
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="44dp"
+                            android:layout_below="@+id/image_avreliy"
+                            android:layout_alignParentLeft="true"
+                            android:gravity="center"
+                            android:text="Марк Аврелий"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_size_image_line" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="@dimen/width_line_image"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true" />
+
+                <LinearLayout
+                    android:id="@+id/layout_anselm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/image_anselm"
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="@dimen/size_image_line"
+                            android:src="@mipmap/anselm" />
+
+                        <TextView
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="44dp"
+                            android:layout_below="@+id/image_anselm"
+                            android:layout_alignParentLeft="true"
+                            android:gravity="center"
+                            android:text="Ансельм Кентерберийский"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_size_image_line" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="@dimen/width_line_image"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true" />
+
+                <LinearLayout
+                    android:id="@+id/layout_spinoza"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/image_spinoza"
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="@dimen/size_image_line"
+                            android:src="@mipmap/spinoza" />
+
+                        <TextView
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="44dp"
+                            android:layout_below="@+id/image_spinoza"
+                            android:layout_alignParentLeft="true"
+                            android:gravity="center"
+                            android:text="Бенедикт Спиноза"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_size_image_line" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="@dimen/width_line_image"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true" />
+
+                <LinearLayout
+                    android:id="@+id/layout_shopengauer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/image_shopengauer"
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="@dimen/size_image_line"
+                            android:src="@mipmap/shopengauer" />
+
+                        <TextView
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="44dp"
+                            android:layout_below="@+id/image_shopengauer"
+                            android:layout_alignParentLeft="true"
+                            android:gravity="center"
+                            android:text="Артур Шопенгауэр"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_size_image_line" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="@dimen/width_line_image"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true" />
+
+                <LinearLayout
+                    android:id="@+id/layout_nicshe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/image_nicshe"
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="@dimen/size_image_line"
+                            android:src="@mipmap/nicshe" />
+
+                        <TextView
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="44dp"
+                            android:layout_below="@+id/image_nicshe"
+                            android:layout_alignParentLeft="true"
+                            android:gravity="center"
+                            android:text="Фридрих Ницше"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_size_image_line" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="@dimen/width_line_image"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true" />
+
+                <LinearLayout
+                    android:id="@+id/layout_sarts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/image_sarts"
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="@dimen/size_image_line"
+                            android:src="@mipmap/sarts" />
+
+                        <TextView
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="44dp"
+                            android:layout_below="@+id/image_sarts"
+                            android:layout_alignParentLeft="true"
+                            android:gravity="center"
+                            android:text="Жан-Поль Сартр"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_size_image_line" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="@dimen/width_line_image"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true" />
+
+                <LinearLayout
+                    android:id="@+id/layout_ponti"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/image_ponti"
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="@dimen/size_image_line"
+                            android:src="@mipmap/ponti" />
+
+                        <TextView
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="44dp"
+                            android:layout_below="@+id/image_ponti"
+                            android:layout_alignParentLeft="true"
+                            android:gravity="center"
+                            android:text="Морис Мерло-Понти"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_size_image_line" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="@dimen/width_line_image"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true" />
+
+                <LinearLayout
+                    android:id="@+id/layout_aristoteltwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/image_aristoteltwo"
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="@dimen/size_image_line"
+                            android:src="@mipmap/aristotel" />
+
+                        <TextView
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="44dp"
+                            android:layout_below="@+id/image_aristoteltwo"
+                            android:layout_alignParentLeft="true"
+                            android:gravity="center"
+                            android:text="Аристотель"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_size_image_line" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="@dimen/width_line_image"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true" />
+
+                <LinearLayout
+                    android:id="@+id/layout_kant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/image_kant"
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="@dimen/size_image_line"
+                            android:src="@mipmap/kant" />
+
+                        <TextView
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="44dp"
+                            android:layout_below="@+id/image_kant"
+                            android:layout_alignParentLeft="true"
+                            android:gravity="center"
+                            android:text="Иммануил Кант"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_size_image_line" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="@dimen/width_line_image"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true" />
+
+                <LinearLayout
+                    android:id="@+id/layout_platon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/image_platon"
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="@dimen/size_image_line"
+                            android:src="@mipmap/platon" />
+
+                        <TextView
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="44dp"
+                            android:layout_below="@+id/image_platon"
+                            android:layout_alignParentLeft="true"
+                            android:gravity="center"
+                            android:text="Платон"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_size_image_line" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="@dimen/width_line_image"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true" />
+
+                <LinearLayout
+                    android:id="@+id/layout_konfuciy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/image_konfuciy"
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="@dimen/size_image_line"
+                            android:src="@mipmap/konfuciy" />
+
+                        <TextView
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="44dp"
+                            android:layout_below="@+id/image_konfuciy"
+                            android:layout_alignParentLeft="true"
+                            android:gravity="center"
+                            android:text="Конфуций"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_size_image_line" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="@dimen/width_line_image"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true" />
+
+                <LinearLayout
+                    android:id="@+id/layout_um"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/image_um"
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="@dimen/size_image_line"
+                            android:src="@mipmap/um" />
+
+                        <TextView
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="44dp"
+                            android:layout_below="@+id/image_um"
+                            android:layout_alignParentLeft="true"
+                            android:gravity="center"
+                            android:text="Дэвид Юм"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_size_image_line" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="@dimen/width_line_image"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true" />
+
+                <LinearLayout
+                    android:id="@+id/layout_dekart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/image_dekart"
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="@dimen/size_image_line"
+                            android:src="@mipmap/dekart" />
+
+                        <TextView
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="44dp"
+                            android:layout_below="@+id/image_dekart"
+                            android:layout_alignParentLeft="true"
+                            android:gravity="center"
+                            android:text="Рене Декарт"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_size_image_line" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="@dimen/width_line_image"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true" />
+
+                <LinearLayout
+                    android:id="@+id/layout_socrat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/image_socrat"
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="@dimen/size_image_line"
+                            android:src="@mipmap/socrat" />
+
+                        <TextView
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="44dp"
+                            android:layout_below="@+id/image_socrat"
+                            android:layout_alignParentLeft="true"
+                            android:gravity="center"
+                            android:text="Сократ"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_size_image_line" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="@dimen/width_line_image"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true" />
+
+                <LinearLayout
+                    android:id="@+id/layout_makiavelli"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/image_makiavelli"
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="@dimen/size_image_line"
+                            android:src="@mipmap/makiavelli" />
+
+                        <TextView
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="44dp"
+                            android:layout_below="@+id/image_makiavelli"
+                            android:layout_alignParentLeft="true"
+                            android:gravity="center"
+                            android:text="Никколо Макиавелли"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_size_image_line" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="@dimen/width_line_image"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true" />
+
+                <LinearLayout
+                    android:id="@+id/layout_lock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/image_lock"
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="@dimen/size_image_line"
+                            android:src="@mipmap/lock" />
+
+                        <TextView
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="44dp"
+                            android:layout_below="@+id/image_lock"
+                            android:layout_alignParentLeft="true"
+                            android:gravity="center"
+                            android:text="Джон Локк"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_size_image_line" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="@dimen/width_line_image"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true" />
+
+                <LinearLayout
+                    android:id="@+id/layout_diogen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/image_diogen"
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="@dimen/size_image_line"
+                            android:src="@mipmap/diogen" />
+
+                        <TextView
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="44dp"
+                            android:layout_below="@+id/image_diogen"
+                            android:layout_alignParentLeft="true"
+                            android:gravity="center"
+                            android:text="Диоген"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_size_image_line" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="@dimen/width_line_image"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true" />
+
+                <LinearLayout
+                    android:id="@+id/layout_foma"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/image_foma"
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="@dimen/size_image_line"
+                            android:src="@mipmap/foma" />
+
+                        <TextView
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="44dp"
+                            android:layout_below="@+id/image_foma"
+                            android:layout_alignParentLeft="true"
+                            android:gravity="center"
+                            android:text="Фома Аквинский"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_size_image_line" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="@dimen/width_line_image"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true" />
+
+                <LinearLayout
+                    android:id="@+id/layout_czy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/image_czy"
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="@dimen/size_image_line"
+                            android:src="@mipmap/czy" />
+
+                        <TextView
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="44dp"
+                            android:layout_below="@+id/image_czy"
+                            android:layout_alignParentLeft="true"
+                            android:gravity="center"
+                            android:text="Лао-Цзы"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_size_image_line" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="@dimen/width_line_image"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true" />
+
+                <LinearLayout
+                    android:id="@+id/layout_leibnic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/image_leibnic"
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="@dimen/size_image_line"
+                            android:src="@mipmap/leibnic" />
+
+                        <TextView
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="44dp"
+                            android:layout_below="@+id/image_leibnic"
+                            android:layout_alignParentLeft="true"
+                            android:gravity="center"
+                            android:text="Готфрид Вильгельм Лейбниц"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_size_image_line" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="@dimen/width_line_image"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true" />
+
+                <LinearLayout
+                    android:id="@+id/layout_spinozatwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/image_spinozatwo"
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="@dimen/size_image_line"
+                            android:src="@mipmap/spinoza" />
+
+                        <TextView
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="44dp"
+                            android:layout_below="@+id/image_spinozatwo"
+                            android:layout_alignParentLeft="true"
+                            android:gravity="center"
+                            android:text="Бенедикт Спиноза"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_size_image_line" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="@dimen/width_line_image"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true" />
+
+                <LinearLayout
+                    android:id="@+id/layout_volter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/image_volter"
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="@dimen/size_image_line"
+                            android:src="@mipmap/volter" />
+
+                        <TextView
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="44dp"
+                            android:layout_below="@+id/image_volter"
+                            android:layout_alignParentLeft="true"
+                            android:gravity="center"
+                            android:text="Вольтер"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_size_image_line" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="@dimen/width_line_image"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true" />
+
+                <LinearLayout
+                    android:id="@+id/layout_gobs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/image_gobs"
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="@dimen/size_image_line"
+                            android:src="@mipmap/gobs" />
+
+                        <TextView
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="44dp"
+                            android:layout_below="@+id/image_gobs"
+                            android:layout_alignParentLeft="true"
+                            android:gravity="center"
+                            android:text="Томас Гоббс"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_size_image_line" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="@dimen/width_line_image"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true" />
+
+                <LinearLayout
+                    android:id="@+id/layout_avgustin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/image_avgustin"
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="@dimen/size_image_line"
+                            android:src="@mipmap/avgustin" />
+
+                        <TextView
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="44dp"
+                            android:layout_below="@+id/image_avgustin"
+                            android:layout_alignParentLeft="true"
+                            android:gravity="center"
+                            android:text="Аврелий Августин"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_size_image_line" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="@dimen/width_line_image"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true" />
+
+                <LinearLayout
+                    android:id="@+id/layout_gazali"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/image_gazali"
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="@dimen/size_image_line"
+                            android:src="@mipmap/gazali" />
+
+                        <TextView
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="44dp"
+                            android:layout_below="@+id/image_gazali"
+                            android:layout_alignParentLeft="true"
+                            android:gravity="center"
+                            android:text="Абу Хамид аль-Газали"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_size_image_line" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="@dimen/width_line_image"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true" />
+
+                <LinearLayout
+                    android:id="@+id/layout_budda"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/image_budda"
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="@dimen/size_image_line"
+                            android:src="@mipmap/budda" />
+
+                        <TextView
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="44dp"
+                            android:layout_below="@+id/image_budda"
+                            android:layout_alignParentLeft="true"
+                            android:gravity="center"
+                            android:text="Сиддхартха Гаутама Будда"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_size_image_line" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="@dimen/width_line_image"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true" />
+
+                <LinearLayout
+                    android:id="@+id/layout_monteskie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/image_monteskie"
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="@dimen/size_image_line"
+                            android:src="@mipmap/monteskie" />
+
+                        <TextView
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="44dp"
+                            android:layout_below="@+id/image_monteskie"
+                            android:layout_alignParentLeft="true"
+                            android:gravity="center"
+                            android:text="Барон де Монтескьё"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_size_image_line" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="@dimen/width_line_image"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true" />
+
+                <LinearLayout
+                    android:id="@+id/layout_russo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/image_russo"
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="@dimen/size_image_line"
+                            android:src="@mipmap/russo" />
+
+                        <TextView
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="44dp"
+                            android:layout_below="@+id/image_russo"
+                            android:layout_alignParentLeft="true"
+                            android:gravity="center"
+                            android:text="Жан-Жак Руссо"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_size_image_line" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="@dimen/width_line_image"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true" />
+
+                <LinearLayout
+                    android:id="@+id/layout_berkly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/image_berkly"
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="@dimen/size_image_line"
+                            android:src="@mipmap/berkly" />
+
+                        <TextView
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="44dp"
+                            android:layout_below="@+id/image_berkly"
+                            android:layout_alignParentLeft="true"
+                            android:gravity="center"
+                            android:text="Джордж Беркли"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_size_image_line" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="@dimen/width_line_image"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true" />
+
+                <LinearLayout
+                    android:id="@+id/layout_rend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/image_rend"
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="@dimen/size_image_line"
+                            android:src="@mipmap/rend" />
+
+                        <TextView
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="44dp"
+                            android:layout_below="@+id/image_rend"
+                            android:layout_alignParentLeft="true"
+                            android:gravity="center"
+                            android:text="Айн Рэнд"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_size_image_line" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="@dimen/width_line_image"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true" />
+
+                <LinearLayout
+                    android:id="@+id/layout_buvuar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/image_buvuar"
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="@dimen/size_image_line"
+                            android:src="@mipmap/buvuar" />
+
+                        <TextView
+                            android:layout_width="@dimen/size_image_line"
+                            android:layout_height="44dp"
+                            android:layout_below="@+id/image_buvuar"
+                            android:layout_alignParentLeft="true"
+                            android:gravity="center"
+                            android:text="Симона де Бувуар"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_size_image_line" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="11dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true" />
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0.2dp"
+            android:layout_below="@+id/hsv"
+            android:layout_alignParentRight="true" />
+
+
+        <LinearLayout
+            android:id="@+id/prev"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:descendantFocusability="blocksDescendants"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_chevron_left_black_24dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:descendantFocusability="blocksDescendants"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_nap" />
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?><!--suppress ALL -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.Philosophers.Begin.BeginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="1dp">
+
+
+        <LinearLayout
+            android:id="@+id/layout_begin"
+            android:layout_width="373dp"
+            android:layout_height="766dp"
+            android:background="@drawable/back"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="33dp"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="54dp">
+
+            <!--suppress ALL
+                        <WebView
+                            android:id="@+id/helloWorld"
+                            android:layout_width="match_parent"
+                            android:background="@drawable/bg_round_app_info"
+                            android:layout_height="400dp" />
+                        -->
+
+            <TextView
+                android:id="@+id/textviewwelcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginBottom="44dp"
+                android:layout_marginRight="11dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:gravity="right"
+                android:text="Welcome"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#98C2E4"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/textviewPhilosofia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginRight="31dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:gravity="left"
+                android:text="Философия"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/newx"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:id="@+id/bottonnext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:src="@drawable/background">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/linebeginbottom"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="11dp"
+                android:layout_marginRight="11dp"
+                android:background="@color/white"
+                android:textColor="@color/title"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/linebeginbottomParsing"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="11dp"
+                android:layout_marginRight="11dp"
+                android:background="@color/white"
+                android:textColor="@color/title"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textviewversion"
+                android:layout_width="292dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginRight="31dp"
+                android:layout_marginBottom="122dp"
+                android:gravity="right"
+                android:text="версия 1.0"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+            <!--            <TextView-->
+            <!--                android:id="@+id/textviewprocent"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginLeft="11dp"-->
+            <!--                android:textStyle="bold"-->
+            <!--                android:textColor="@color/colorPrimarysix"-->
+            <!--                android:gravity="right"-->
+            <!--                android:layout_marginRight="31dp"-->
+            <!--                android:textAppearance="@style/TextAppearance.AppCompat.Large"-->
+            <!--                android:textSize="12dp" />-->
+            <!--            <ProgressBar-->
+            <!--                android:id="@+id/progressbarbegin"-->
+            <!--                style="@style/MyProgressBar"-->
+            <!--                android:layout_marginLeft="11dp"-->
+            <!--                android:layout_marginRight="11dp"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="11dp">-->
+
+            <!--            </ProgressBar>-->
+
+
+
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_contact"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        android:layout_marginLeft="@dimen/layout_marginLeftTwo"
+        android:layout_marginRight="@dimen/layout_marginRightTwo"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/continfotitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_marginLeftOne"
+            android:layout_marginTop="11dp"
+            android:layout_marginRight="@dimen/layout_marginRightOne"
+            android:text="Контактная информация."
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_marginLeftTwo"
+
+            android:layout_marginRight="@dimen/layout_marginRightTwo"
+            android:background="@drawable/bg_round_top_sector"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/onetext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="@dimen/layout_marginLeftTwo"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="@dimen/layout_marginRightTwo"
+                android:text="Контакт с разработчиком "
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/white"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/twotext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeftTwo"
+
+                android:layout_marginRight="@dimen/layout_marginRightTwo"
+                android:text="Отправьте, пожайлуста  письмо по этому адресу:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/white"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+
+                android:layout_marginLeft="@dimen/layout_marginLeftTwo"
+
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="@dimen/layout_marginRightTwo"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/toolbar_white"
+                android:textColor="@color/title"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/threetext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="@dimen/layout_marginLeftTwo"
+                android:layout_marginRight="@dimen/layout_marginRightTwo"
+                android:layout_marginBottom="11dp"
+                android:text="developer.stanislavkononenko@gmail.com"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/white"
+                android:textSize="12dp" />
+
+            <Button
+                android:id="@+id/button_send_mail_from_info"
+                android:layout_width="128dp"
+                android:layout_height="22dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/layout_marginTop"
+                android:layout_marginRight="@dimen/layout_marginRightTwo"
+                android:layout_marginBottom="@dimen/layout_marginBottom"
+                android:background="@drawable/bg_round_app_info"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="Отправить "
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <!--    <TextView-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:text="To:"-->
+        <!--        android:textAppearance="@style/TextAppearance.AppCompat.Large" />-->
+
+        <!--    <EditText-->
+        <!--        android:id="@+id/edit_text_to"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="32dp"-->
+        <!--        android:text="developer.stanislavkononenko@gmail.com"-->
+        <!--        android:background="@drawable/bg_round"-->
+        <!--        android:inputType="textEmailAddress" />-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/layout_marginLeftTwo"
+
+            android:layout_marginRight="@dimen/layout_marginRightTwo"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/infoTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeftTwo"
+                android:layout_marginTop="23dp"
+                android:layout_marginRight="@dimen/layout_marginRightTwo"
+                android:text="Информация по приложению."
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/white"
+                android:textSize="17dp" />
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_round_app_info"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/infoTextViewone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="@dimen/layout_marginLeftTwo"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="@dimen/layout_marginRightTwo"
+                    android:text="Это приложнение "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_info_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/infoTextViewtwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_marginLeftTwo"
+
+                    android:layout_marginRight="@dimen/layout_marginRightTwo"
+                    android:text="создавалось - исключительно "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_info_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/infoTextViewthree"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="@dimen/layout_marginLeftTwo"
+                    android:layout_marginRight="@dimen/layout_marginRightTwo"
+                    android:text="в демонстрационных целях."
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_info_size"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayoutLineWithButtons"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="@dimen/layout_marginLeftTwo"
+
+                    android:layout_marginTop="21dp"
+                    android:layout_marginRight="@dimen/layout_marginRightTwo"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageButton
+                        android:id="@+id/buttonRightOne"
+                        android:layout_width="27dp"
+                        android:layout_height="27dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="11dp"
+                        android:src="@drawable/ic_info_outline_black_24dp" />
+
+                    <ImageButton
+                        android:id="@+id/buttonRightTwo"
+                        android:layout_width="27dp"
+                        android:layout_height="27dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="43dp"
+                        android:src="@drawable/ic_email_black_24dp" />
+
+                    <ImageButton
+                        android:id="@+id/buttonRightThree"
+                        android:layout_width="27dp"
+                        android:layout_height="27dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="75dp"
+                        android:src="@drawable/ic_format_list_bulleted_black_24dp" />
+
+                    <ImageButton
+                        android:id="@+id/buttonRightFour"
+                        android:layout_width="27dp"
+                        android:layout_height="27dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="107dp"
+                        android:src="@drawable/ic_insert_comment_black_24dp" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/linebottomm"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="11dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/toolbar_white"
+                    android:textColor="@color/title"
+                    android:textStyle="bold"
+                    tools:ignore="DuplicateIds" />
+
+                <Button
+                    android:id="@+id/button_more_info"
+                    android:layout_width="128dp"
+                    android:layout_height="22dp"
+                    android:layout_gravity="left"
+
+                    android:layout_marginLeft="@dimen/layout_marginLeftTwo"
+                    android:layout_marginRight="@dimen/layout_marginRightTwo"
+                    android:layout_marginBottom="20dp"
+
+                    android:background="@drawable/bg_round_botton_more_info"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:text="Больше"
+                    android:textColor="@color/white"
+                    tools:ignore="DuplicateIds" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

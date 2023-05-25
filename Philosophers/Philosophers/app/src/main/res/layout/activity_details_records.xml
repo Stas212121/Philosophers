@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutdetailsRecords"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textviewtitledetailsrecords"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="33dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginRight="10dp"
+            android:text="Избранные цитаты"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="11dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/toolbar_white"
+
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_marginLeftTwo"
+
+            android:layout_marginRight="@dimen/layout_marginRightTwo"
+            android:background="@drawable/bg_round_top_sector"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="@dimen/layout_marginLeftTwo"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="@dimen/layout_marginRightTwo"
+                android:text="Здесь вы можете : "
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/white"
+                android:textSize="17dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeftTwo"
+
+                android:layout_marginRight="@dimen/layout_marginRightTwo"
+                android:text="просматривать и удалять цитаты"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/white"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/linee"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+
+                android:layout_marginLeft="@dimen/layout_marginLeftTwo"
+
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="@dimen/layout_marginRightTwo"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/toolbar_white"
+                android:textColor="@color/title"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/lineee"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="11dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/toolbar_white"
+
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/list_view_details_records"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:dividerHeight="1dp"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>

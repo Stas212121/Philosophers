@@ -1,0 +1,120 @@
+<resources>
+
+
+    <string name="app_name">Философы 1.0</string>
+    <string name="action_bar_main">Философы  1.0</string>
+    <string name="home">Домой</string>
+    <string name="add_records">Добавить</string>
+    <string name="show_records">Избранное</string>
+    <string name="exit">Выход</string>
+    <string name="contact">Контакт</string>
+    <string name="four">Four</string>
+    <string name="five">Five</string>
+    <string name="action_search">Search</string>
+    <string name="atention_ru"></string>
+    <string name="item1">Item1</string>
+    <string name="item2">Item2</string>
+    <string name="info">Info</string>
+    <string name="item4">Item4</string>
+    <string name="settings"></string>
+    <string name="edit_theme">Темы</string>
+    <string name="toast_font">lato-bold.ttf</string>
+    <string name="uslovie">  Вы можете вводить до 1000 символов</string>
+    <string name="uslovietext">#B97F8585</string>
+
+    <!--suppress ALL
+        <string name="htmltwo">
+             <![CDATA[
+           <!DOCTYPE html>
+
+           <html>
+
+            <head>
+           <meta charset=" + "utf-8" + ">
+
+           <title>color</title>
+
+           <style> .letter
+           {color: white;
+           font-size: 200%;
+            }p
+           {color:#ffffff;  }
+           </style>
+
+             <style> .letterprogramm
+           {color: white;
+           font-size: 100%;
+            }
+
+       li span {
+        color: white;
+       }
+
+       li {
+        color: white;
+       }
+           </style>
+
+            </head>
+    <body   bgcolor="#035fac">
+
+
+
+            <p><span class="letter">П</span>
+            риложение <span class="letterprogramm"><u>Философы </u></span> - является собранием цитат философов
+            живших в разные эпохи.
+            </p>
+
+
+            <p><span class="letter">П</span>
+            риложение позволяет сохранять цитаты других философов ,
+            а также собственные мысли и умозаключения.
+            </p>
+
+            <p>Собраны цитаты <b>32 философов</b>.</p>
+            <p>Перечень философов:
+            <ul>
+                               <li><span class="listphilosofs"><b>Парменид</b></span></li>
+                <li><span><b>Аристотель</b></span></li>
+                <li><span><b>Марк Аврелий</b></span></li>
+                <li><span><b>Ансельм Кентерберийский</b></span></li>
+                <li><span><b>Бенедикт Спиноза</b></span></li>
+                <li><span><b>Артур Шопенгауэр</b></span></li>
+                <li><span><b>Фридрих Ницше</b></span></li>
+                <li><span><b>Жан-Поль Сартр</b></span></li>
+                <li><span><b>Морис Мерло-Понти</b></span></li>
+                <li><span><b>Аристотель</b></span></li>
+                <li><span><b>Иммануил Кант</b></span></li>
+                <li><span><b>Платон</b></span></li>
+                <li><span><b>Конфуций </b></span></li>
+        <li><span><b>Дэвид Юм</b></span></li>
+        <li><span><b>Рене Декарт</b></span></li>
+        <li><span><b>Сократ</b></span></li>
+        <li><span><b>Никколо Макиавелли</b></span></li>
+        <li><span><b>Джон Локк</b></span></li>
+        <li><span><b>Диоген</b></span></li>
+        <li><span><b>Фома Аквинский</b></span></li>
+        <li><span><b>Лао-Цзы</b></span></li>
+        <li><span><b>Готфрид Вильгельм Лейбниц</b></span></li>
+        <li><span><b>Барух Спиноза</b></span></li>
+        <li><span><b>Вольтер</b></span></li>
+        <li><span><b>Томас Гоббс</b></span></li>
+        <li><span><b>Аврелий Августин</b></span></li>
+        <li><span><b>Абу Хамид аль-Газали</b></span></li>
+        <li><span><b>Сиддхартха Гаутама Будда</b></span></li>
+        <li><span><b>Барон де Монтескьё</b></li>
+        <li><span><b>Жан-Жак Руссо</b></span></li>
+        <li><span><b>Джордж Беркли</b></span></li>
+        <li><span><b>Айн Рэнд</b></span></li>
+        <li><span><b>Симона де Бувуар</b></span></li>
+            </ul>
+            <p>
+            </body>
+
+            </html>
+
+    ]]>
+    </string> -->
+    <string name="title_activity_maps">Map</string>
+
+</resources>
